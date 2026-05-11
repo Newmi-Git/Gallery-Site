@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="gallery-title">GALLERY</h1>
+      <p class="description">A curated collection of moments</p>
+    </header>
+
+    <!-- Inputs are direct siblings of .filter and .image-list so CSS ~ works -->
+    <input type="radio" name="filter" id="all" class="filter-btn" checked />
+    <input type="radio" name="filter" id="landscape" class="filter-btn" />
+    <input type="radio" name="filter" id="portrait" class="filter-btn" />
+    <input type="radio" name="filter" id="architecture" class="filter-btn" />
+
+    <div class="filter">
+      <label for="all" class="filter-btn-label">All</label>
+      <label for="landscape" class="filter-btn-label">Landscapes</label>
+      <label for="portrait" class="filter-btn-label">Portraits</label>
+      <label for="architecture" class="filter-btn-label">Architecture</label>
+    </div>
+
+    <div class="image-list">
+
+      <div class="image-card landscape">
+        <div class="image-container">
+          <img class="image" src="https://static.vecteezy.com/system/resources/thumbnails/021/901/104/small_2x/sunset-in-the-mountains-sunrise-in-the-mountains-beautiful-winter-landscape-mountain-landscape-at-sunset-panoramic-view-of-the-mountains-photo.jpg" alt="Mountain View" />
+          <div class="overlay">A breathtaking view of snow-capped peaks at sunrise.</div>
+        </div>
+        <div class="card-info">
+          <h3>Mountain View</h3>
+          <span class="category">Landscape</span>
+        </div>
+      </div>
+
+      <div class="image-card portrait">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/xUbx5bylWNGiJKadauQ66rz6VEQwCtfJrct3U_gqgpY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzUw/MzcxNTMvcGV4ZWxz/LXBob3RvLTM1MDM3/MTUzL2ZyZWUtcGhv/dG8tb2YtZXZlbmlu/Zy1zdHJlZXQtc2Nl/bmUtaW4tY2VudHJh/bC1ob25nLWtvbmcu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" alt="City Portrait" />
+          <div class="overlay">A vertical shot of a bustling downtown street at dusk.</div>
+        </div>
+        <div class="card-info">
+          <h3>City Portrait</h3>
+          <span class="category">Portrait</span>
+        </div>
+      </div>
+
+      <div class="image-card architecture">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/bmcTWXSEowdyD8WPsUvFVShPwYAjPCyd4mxPdet1Juc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3RvY2tjYWtl/LmNvbS9wdWJsaWMv/MS9iLzIvMWIyOGI0/YWMtZmMwZC00Mjdi/LWI0OGMtYmY0NWVl/NGNkM2VmX2xhcmdl/L2dvdGhpYy1jYXRo/ZWRyYWwtZmFjYWRl/LXN0b2Nra2Fha2Uu/anBn" alt="Gothic Cathedral" />
+          <div class="overlay">Intricate spires and stained glass of a medieval cathedral.</div>
+        </div>
+        <div class="card-info">
+          <h3>Gothic Cathedral</h3>
+          <span class="category">Architecture</span>
+        </div>
+      </div>
+
+      <div class="image-card landscape">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/DX7C2ocSeHwGftbMs8ND4dGeYolXN-6-wZcv29V2ZsA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3RvY2tjYWtl/LmNvbS9wdWJsaWMv/My84LzIvMzgyZGZk/NjYtODE2ZC00NzA5/LTk0MjEtZTQ1NzBi/YWYwZWYxX2xhcmdl/L2NvYXN0YWwtZ29s/ZGVuLWhvdXItc3Rv/Y2tjYWtlLmpwZw" alt="Sunset Beach" />
+          <div class="overlay">Golden hour waves lapping against a sandy shore.</div>
+        </div>
+        <div class="card-info">
+          <h3>Sunset Beach</h3>
+          <span class="category">Landscape</span>
+        </div>
+      </div>
+
+      <div class="image-card portrait">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/oklbrtJjyFGDU_bTBvKFewS4YI64gZuFuRlps1gOZ6E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9nb2xk/ZW4tbGlnaHQtc3Ry/ZWFtcy10YWxsLXBp/bmUtdHJlZXMtYXMt/bmFycm93LWZvcmVz/dC1wYXRoLXdpbmRz/LXN1bmxpdC1ncmFz/cy10cmFucXVpbC13/b29kbGFuZC1zZXR0/aW5nLXdhcm0tc3Vu/bGlnaHQtNDEyMDU1/MjA5LmpwZw" alt="Forest Path" />
+          <div class="overlay">A narrow trail winding through towering pine trees.</div>
+        </div>
+        <div class="card-info">
+          <h3>Forest Path</h3>
+          <span class="category">Portrait</span>
+        </div>
+      </div>
+
+      <div class="image-card architecture">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/by_co9NyoIrue4_baN0dlndLoRa5PGh95cqvPO67uJ0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9nbGFz/cy1lZGlmaWNlLTEw/MzUyMTc2LmpwZw" alt="Modern Skyscraper" />
+          <div class="overlay">Glass-and-steel tower reflecting the sky.</div>
+        </div>
+        <div class="card-info">
+          <h3>Modern Skyscraper</h3>
+          <span class="category">Architecture</span>
+        </div>
+      </div>
+
+      <div class="image-card landscape">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/MgrzxaaBO0lup5fjTar8N2aLbPSLXWQA_q_uInEt6Dw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9nb2xk/ZW4tZGVzZXJ0LWR1/bmVzLXN1bnNldC1z/dHVubmluZy1sYW5k/c2NhcGUtcm9sbGlu/Zy1zYW5kaGlsbHMt/YmF0aGVkLXdhcm0t/Z2xvdy1zZXR0aW5n/LXN1bi1nb2xkZW4t/MzgwMTI3NTc4Lmpw/Zw" alt="Desert Dunes" />
+          <div class="overlay">Rolling sand dunes under a blazing sun.</div>
+        </div>
+        <div class="card-info">
+          <h3>Desert Dunes</h3>
+          <span class="category">Landscape</span>
+        </div>
+      </div>
+
+      <div class="image-card portrait">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/a96offU7ktpHjO78At1D4Wig3fzNJiTTujUlJY2QThg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzlmLzU4/L2I4LzlmNThiOGNm/MDk1ZDg3OTMzNzQ2/YTc1N2MwMTQ2MDlj/LmpwZw" alt="Waterfall" />
+          <div class="overlay">A cascading waterfall surrounded by lush greenery.</div>
+        </div>
+        <div class="card-info">
+          <h3>Waterfall</h3>
+          <span class="category">Portrait</span>
+        </div>
+      </div>
+
+      <div class="image-card architecture">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/cEKh5vKQ03YESEo-9qsyhTkYuyvqU7g3dn-xhXe0Kag/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3RvY2tjYWtl/LmNvbS9wdWJsaWMv/My9mLzMvM2YzMGE4/MmEtYWY0NC00OTdh/LTg2NjMtZGMzZGE5/Mzc5OTIzX2xhcmdl/L2hpc3RvcmljLXN0/b25lLWJyaWRnZS1z/dG9ja2Nha2UuanBn" alt="Old Bridge" />
+          <div class="overlay">A historic stone bridge spanning a quiet river.</div>
+        </div>
+        <div class="card-info">
+          <h3>Old Bridge</h3>
+          <span class="category">Architecture</span>
+        </div>
+      </div>
+
+      <div class="image-card landscape">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/HJxWOgvFsAV_w5kVNXNEjqR5f-o-6OjYz1uHXjAG8mA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3RvY2tjYWtl/LmNvbS9wdWJsaWMv/Yi81LzAvYjUwN2Jl/MTQtMzE0Yy00OTZi/LTkzMDgtMDM2MzIz/NzdhYjAxX2xhcmdl/L21vdW50YWluLXJl/ZmxlY3Rpb24tc2Vy/ZW5pdHktc3RvY2tj/YWtlLmpwZw" alt="Alpine Lake" />
+          <div class="overlay">Crystal-clear lake mirrored against mountain reflections.</div>
+        </div>
+        <div class="card-info">
+          <h3>Alpine Lake</h3>
+          <span class="category">Landscape</span>
+        </div>
+      </div>
+
+      <div class="image-card portrait">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/6R6GBGKOE2t4a-9bgT0ZKSRFTp2YKg0Xd36ndgXru4E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzVk/OTI0YTlhYzEyMDU1/NGIyODcwZDZmNC8z/MjBkMzgwYi01ZmJl/LTRjODEtOTIzYS0z/MjMyNzA0Nzc3ODkv/SGFuZCtNdXJhbCtp/bitBcnQrQWxsZXkr/QXNobGFuZCtLWQ" alt="Street Art" />
+          <div class="overlay">Vibrant mural on a city alley wall.</div>
+        </div>
+        <div class="card-info">
+          <h3>Street Art</h3>
+          <span class="category">Portrait</span>
+        </div>
+      </div>
+
+      <div class="image-card architecture">
+        <div class="image-container">
+          <img class="image" src="https://imgs.search.brave.com/g3S2ggZ1toPQ38vUN8QhvapUdG0Jk21h9KTr99xeVDw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDk3/MTUyODk2L3Bob3Rv/L2JyYWRmb3JkLWNp/dHktaGFsbC1hbmQt/Y2VudGVuYXJ5LXNx/dWFyZS1hdC1uaWdo/dC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9QmE3YnN1Y2pH/TWdMa3Rxb3ZFZVlm/WWUyMzFmdVdtclY1/ZjhYNDlRMDV2WT0" alt="Clocktower" />
+          <div class="overlay">A Victorian-era clocktower in a town square.</div>
+        </div>
+        <div class="card-info">
+          <h3>Clocktower</h3>
+          <span class="category">Architecture</span>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
